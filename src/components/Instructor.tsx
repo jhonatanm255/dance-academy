@@ -54,13 +54,13 @@ export default function Instructor() {
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Conoce a Nuestra Directora
             </h2>
-            <h3 className="text-xl text-pink-400 mb-4">Karina Fernández</h3>
+            <h3 className="text-xl text-pink-400 mb-4">Lic. Martha Graham</h3>
             <p className="text-gray-600 mb-6">
               Con más de 15 años de experiencia en danza clásica y
-              contemporánea, María ha dedicado su vida a formar nuevas
-              generaciones de bailarinas. Graduada del Conservatorio Nacional de
-              Danza y con estudios en las mejores academias de Nueva York y
-              Londres.
+              contemporánea, la Lic. Martha Graham ha dedicado su vida a formar
+              nuevas generaciones de bailarinas. Graduada del Conservatorio
+              Nacional de Danza y con estudios en las mejores academias de Nueva
+              York y Londres.
             </p>
 
             <div className="space-y-4">

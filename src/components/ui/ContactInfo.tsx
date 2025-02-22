@@ -15,7 +15,7 @@ export function ContactInfo() {
         </li>
         <li className="flex items-center justify-center md:justify-start space-x-2">
           <Mail className="w-5 h-5 text-pink-300" />
-          <span className="text-gray-400">info@dreamdance.com</span>
+          <span className="text-gray-400">info@Danceacademy.com</span>
         </li>
       </ul>
     </div>

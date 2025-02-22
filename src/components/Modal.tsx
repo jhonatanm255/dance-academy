@@ -54,7 +54,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           <p className="text-gray-700 mb-4">
             <strong>Ubicación:</strong>
             <br />
-            Calle Danza 123, Ciudad de la Música
+            Av. Principal 123, Ciudad
           </p>
           <a
             href={whatsappUrl}
