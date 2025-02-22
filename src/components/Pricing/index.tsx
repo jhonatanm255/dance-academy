@@ -8,7 +8,6 @@ export default function Pricing() {
   const [plans, setPlans] = useState<any[]>([]);
 
   useEffect(() => {
-    // Cargar los planes desde Firestore
     const loadPlans = async () => {
       try {
         const querySnapshot = await getDocs(collection(db, "plans"));
@@ -26,7 +25,6 @@ export default function Pricing() {
   }, []);
 
   useEffect(() => {
-    // Configuración de ScrollReveal solo cuando los planes estén listos
     if (plans.length > 0) {
       const sr = ScrollReveal();
       sr.reveal(".pricing-title", {
@@ -56,7 +54,7 @@ export default function Pricing() {
         interval: 200,
       });
     }
-  }, [plans]); // Dependemos de `plans` para asegurarnos de que se inicialice después de que estén cargados
+  }, [plans]);
 
   return (
     <section

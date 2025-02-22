@@ -1,28 +1,27 @@
-// import { useEffect } from "react";
-// import ScrollReveal from "scrollreveal";
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 import { Award, BookOpen, Heart } from "lucide-react";
 import profesora from "../assets/profesora.jpg";
 
 export default function Instructor() {
-  // useEffect(() => {
-  //   const sr = ScrollReveal();
+  useEffect(() => {
+    const sr = ScrollReveal();
 
-  //   // Configuración de efectos más sutiles
-  //   sr.reveal("#instructor-section", {
-  //     duration: 1500,
-  //     distance: "40px",
-  //     origin: "bottom",
-  //     opacity: 0,
-  //     interval: 100,
-  //   });
+    sr.reveal("#instructor-section", {
+      duration: 1500,
+      distance: "40px",
+      origin: "bottom",
+      opacity: 0,
+      interval: 100,
+    });
 
-  //   sr.reveal("#instructor-image", {
-  //     duration: 2500,
-  //     distance: "30px",
-  //     origin: "bottom",
-  //     opacity: 0,
-  //   });
-  // }, []);
+    sr.reveal("#instructor-image", {
+      duration: 2500,
+      distance: "30px",
+      origin: "bottom",
+      opacity: 0,
+    });
+  }, []);
 
   return (
     <section

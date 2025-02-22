@@ -1,9 +1,9 @@
-// import { useEffect } from "react";
-// import ScrollReveal from "scrollreveal";
-import img1 from "../assets/arabian.jpeg"; // Ruta a la imagen de Danza Árabe
-import img2 from "../assets/moderna.jpg"; // Ruta a la imagen de Danza Moderna
-import img3 from "../assets/acro.jpeg"; // Ruta a la imagen de Acrodance
-import img4 from "../assets/baby.jpg"; // Ruta a la imagen de Baby Dance
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
+import img1 from "../assets/arabian.jpeg";
+import img2 from "../assets/moderna.jpg";
+import img3 from "../assets/acro.jpeg";
+import img4 from "../assets/baby.jpg";
 
 export default function Class() {
   const classes = [
@@ -11,41 +11,40 @@ export default function Class() {
       title: "Danza Árabe",
       description:
         "Descubre la elegancia y expresión de la danza árabe. Aprende movimientos fluidos y técnicas tradicionales que te conectan con esta cultura milenaria.",
-      image: img1, // Imagen asociada
+      image: img1,
     },
     {
       title: "Danza Moderna",
       description:
         "Explora tu creatividad con la danza moderna. Combina técnicas contemporáneas con emociones para crear coreografías únicas y expresivas.",
-      image: img2, // Imagen asociada
+      image: img2,
     },
     {
       title: "Acrodance",
       description:
         "Fusión de acrobacia y danza. Desarrolla fuerza, flexibilidad y coordinación mientras creas coreografías llenas de dinamismo y espectacularidad.",
-      image: img3, // Imagen asociada
+      image: img3,
     },
     {
       title: "Baby Dance",
       description:
         "Introduce a los más pequeños al mundo de la danza. Clases divertidas y lúdicas que fomentan el ritmo, la coordinación y el amor por el movimiento.",
-      image: img4, // Imagen asociada
+      image: img4,
     },
   ];
 
-  // useEffect(() => {
-  //   const sr = ScrollReveal();
+  useEffect(() => {
+    const sr = ScrollReveal();
 
-  //   // Animación para las tarjetas de clase
-  //   sr.reveal(".class-card", {
-  //     duration: 1000,
-  //     opacity: 0,
-  //     distance: "20px",
-  //     origin: "bottom",
-  //     delay: 300,
-  //     interval: 200,
-  //   });
-  // }, []);
+    sr.reveal(".class-card", {
+      duration: 1000,
+      opacity: 0,
+      distance: "20px",
+      origin: "bottom",
+      delay: 300,
+      interval: 200,
+    });
+  }, []);
 
   return (
     <section

@@ -34,7 +34,7 @@ export default function GalleryManager() {
 
           return {
             id: file.name,
-            url: data.publicUrl, // Aquí se corrige el acceso a la URL pública
+            url: data.publicUrl,
             alt: file.name,
           };
         })

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-// import ScrollReveal from "scrollreveal";
+import ScrollReveal from "scrollreveal";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
@@ -11,7 +11,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
-import supabase from "../lib/supabase"; // Asegúrate de que este archivo contiene tu configuración de Supabase
+import supabase from "../lib/supabase";
 
 interface Image {
   name: string;
@@ -47,33 +47,33 @@ export default function Gallery() {
     fetchImages();
   }, []);
 
-  // useEffect(() => {
-  //   const sr = ScrollReveal();
-  //   // Animar solo el título y el párrafo
-  //   sr.reveal(".gallery-title", {
-  //     duration: 1000,
-  //     opacity: 0,
-  //     distance: "20px",
-  //     origin: "bottom",
-  //     delay: 200,
-  //   });
+  useEffect(() => {
+    const sr = ScrollReveal();
+    // Animar solo el título y el párrafo
+    sr.reveal(".gallery-title", {
+      duration: 1000,
+      opacity: 0,
+      distance: "20px",
+      origin: "bottom",
+      delay: 200,
+    });
 
-  //   sr.reveal(".gallery-subtitle", {
-  //     duration: 1000,
-  //     opacity: 0,
-  //     distance: "20px",
-  //     origin: "bottom",
-  //     delay: 400,
-  //   });
+    sr.reveal(".gallery-subtitle", {
+      duration: 1000,
+      opacity: 0,
+      distance: "20px",
+      origin: "bottom",
+      delay: 400,
+    });
 
-  //   sr.reveal(".gallery-swiper", {
-  //     duration: 1000,
-  //     opacity: 0,
-  //     distance: "20px",
-  //     origin: "bottom",
-  //     delay: 600,
-  //   });
-  // }, []);
+    sr.reveal(".gallery-swiper", {
+      duration: 1000,
+      opacity: 0,
+      distance: "20px",
+      origin: "bottom",
+      delay: 600,
+    });
+  }, []);
 
   return (
     <section id="gallery" className="py-20 bg-gray-50">

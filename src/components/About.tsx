@@ -1,35 +1,35 @@
-// import { useEffect } from "react";
-// import ScrollReveal from "scrollreveal";
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 import { Heart, Star, Users } from "lucide-react";
 
 export default function About() {
-  // useEffect(() => {
-  //   const sr = ScrollReveal();
+  useEffect(() => {
+    const sr = ScrollReveal();
 
-  //   // Configuración para los elementos del About
-  //   sr.reveal("#about-title", {
-  //     duration: 1500,
-  //     distance: "50px",
-  //     origin: "bottom",
-  //     opacity: 0,
-  //   });
+    // Configuración para los elementos del About
+    sr.reveal("#about-title", {
+      duration: 1500,
+      distance: "50px",
+      origin: "bottom",
+      opacity: 0,
+    });
 
-  //   sr.reveal("#about-description", {
-  //     duration: 1500,
-  //     distance: "50px",
-  //     origin: "bottom",
-  //     opacity: 0,
-  //     delay: 200,
-  //   });
+    sr.reveal("#about-description", {
+      duration: 1500,
+      distance: "50px",
+      origin: "bottom",
+      opacity: 0,
+      delay: 200,
+    });
 
-  //   sr.reveal(".about-feature", {
-  //     duration: 1500,
-  //     distance: "50px",
-  //     origin: "bottom",
-  //     opacity: 0,
-  //     interval: 200, // Intervalo entre cada elemento
-  //   });
-  // }, []);
+    sr.reveal(".about-feature", {
+      duration: 1500,
+      distance: "50px",
+      origin: "bottom",
+      opacity: 0,
+      interval: 200, // Intervalo entre cada elemento
+    });
+  }, []);
 
   return (
     <section id="about" className="py-20 bg-white">

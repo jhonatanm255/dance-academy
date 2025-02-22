@@ -112,10 +112,9 @@ export default function ShopManager() {
     if (!productToUpdate) return;
 
     try {
-      // Actualiza el producto con los datos modificados
       await updateDoc(doc(db, "products", editingId), productToUpdate);
-      setEditingId(null); // Cierra el modo de edición
-      await loadProducts(); // Recarga los productos desde la base de datos
+      setEditingId(null);
+      await loadProducts();
     } catch (err) {
       setError("Error al actualizar el producto");
       console.error(err);
