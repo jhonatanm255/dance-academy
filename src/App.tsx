@@ -17,6 +17,7 @@ const Merchandise = lazy(() => import("./components/Merchandise"));
 const Footer = lazy(() => import("./components/Footer"));
 const WhatsappButton = lazy(() => import("./components/WhatsappBtn"));
 const AdminPanel = lazy(() => import("./components/admin/AdminPanel"));
+const Class = lazy(() => import("./components/Class"));
 
 function App() {
   return (
@@ -28,11 +29,12 @@ function App() {
             <>
               <div className="min-h-screen">
                 <Suspense fallback={<div className="min-h-screen" />}>
-                  <WhatsappButton phoneNumber="56926467068" />
+                  <WhatsappButton phoneNumber="" />
                   <Intro />
                   <Navbar />
                   <Hero />
                   <About />
+                  <Class />
                   <Instructor />
                   <Gallery />
                   <Achievements />

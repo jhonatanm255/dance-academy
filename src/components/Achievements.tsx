@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import ScrollReveal from "scrollreveal";
+// import { useEffect } from "react";
+// import ScrollReveal from "scrollreveal";
 import { Trophy, Award, Medal, Star } from "lucide-react";
 
 export default function Achievements() {
@@ -30,19 +30,19 @@ export default function Achievements() {
     },
   ];
 
-  useEffect(() => {
-    const sr = ScrollReveal();
+  // useEffect(() => {
+  //   const sr = ScrollReveal();
 
-    // Animación para los logros
-    sr.reveal(".achievement-card", {
-      duration: 1000,
-      opacity: 0,
-      distance: "20px",
-      origin: "bottom",
-      delay: 300,
-      interval: 200, // Para que cada tarjeta aparezca en intervalos
-    });
-  }, []);
+  //   // Animación para los logros
+  //   sr.reveal(".achievement-card", {
+  //     duration: 1000,
+  //     opacity: 0,
+  //     distance: "20px",
+  //     origin: "bottom",
+  //     delay: 300,
+  //     interval: 200, // Para que cada tarjeta aparezca en intervalos
+  //   });
+  // }, []);
 
   return (
     <section

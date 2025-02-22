@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Star } from "lucide-react";
 import ScrollReveal from "scrollreveal";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo2.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,11 +11,11 @@ export default function Navbar() {
 
     sr.reveal(".navbar", {
       delay: 4700,
-      duration: 1000, // Duración del efecto (1s)
-      distance: "50px", // Distancia del desplazamiento
-      origin: "top", // Desde arriba
-      opacity: 0, // Comienza desde opacidad 0
-      reset: false, // La animación no se repite
+      duration: 1000,
+      distance: "50px",
+      origin: "top",
+      opacity: 0,
+      reset: false,
     });
   }, []);
 
@@ -25,9 +25,9 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             {/* <Star className="h-8 w-8 text-pink-300" /> */}
-            <img className="h-9 w-14" src={logo} alt="logo" />
+            <img className="h-12 w-14" src={logo} alt="logo" />
             <span className="ml-2 text-xl font-semibold text-gray-900">
-              Karina Dance Academy
+              Dance Academy
             </span>
           </div>
 

@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div className="text-center md:text-left">
-            <h3 className="text-xl font-semibold mb-4">Karina Dance Academy</h3>
+            <h3 className="text-xl font-semibold mb-4">Dance Academy</h3>
             <p className="text-gray-400 mb-4">
               Formando bailarinas con pasión y excelencia desde 2010.
             </p>
@@ -34,7 +34,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 pt-8 mt-8 text-center">
           <p className="text-gray-400">
-            © {new Date().getFullYear()} Karina Dance Academy.
+            © {new Date().getFullYear()} Dance Academy.
           </p>
           <Link to="/admin" className="text-pink-500 hover:underline">
             Admin

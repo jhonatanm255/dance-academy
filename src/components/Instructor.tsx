@@ -1,28 +1,28 @@
-import { useEffect } from "react";
-import ScrollReveal from "scrollreveal";
+// import { useEffect } from "react";
+// import ScrollReveal from "scrollreveal";
 import { Award, BookOpen, Heart } from "lucide-react";
-import profesora from "../assets/gallery-img/profesora.jpg";
+import profesora from "../assets/profesora.jpg";
 
 export default function Instructor() {
-  useEffect(() => {
-    const sr = ScrollReveal();
+  // useEffect(() => {
+  //   const sr = ScrollReveal();
 
-    // Configuración de efectos más sutiles
-    sr.reveal("#instructor-section", {
-      duration: 1500,
-      distance: "40px",
-      origin: "bottom",
-      opacity: 0,
-      interval: 100,
-    });
+  //   // Configuración de efectos más sutiles
+  //   sr.reveal("#instructor-section", {
+  //     duration: 1500,
+  //     distance: "40px",
+  //     origin: "bottom",
+  //     opacity: 0,
+  //     interval: 100,
+  //   });
 
-    sr.reveal("#instructor-image", {
-      duration: 2500,
-      distance: "30px",
-      origin: "bottom",
-      opacity: 0,
-    });
-  }, []);
+  //   sr.reveal("#instructor-image", {
+  //     duration: 2500,
+  //     distance: "30px",
+  //     origin: "bottom",
+  //     opacity: 0,
+  //   });
+  // }, []);
 
   return (
     <section
@@ -88,7 +88,7 @@ export default function Instructor() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <Heart className="w-16 h-6 text-pink-300 mt-1" />
+                <Heart className="w-6 h-6 text-pink-300 flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-semibold">Filosofía de Enseñanza</h4>
                   <p className="text-gray-600">

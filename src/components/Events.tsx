@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { collection, getDocs, deleteDoc, doc } from "firebase/firestore";
-import ScrollReveal from "scrollreveal";
+// import ScrollReveal from "scrollreveal";
 import { Calendar, MapPin, Clock } from "lucide-react";
 import { db } from "../lib/firebase";
 
@@ -50,20 +50,20 @@ export default function Events() {
     fetchEvents();
   }, []);
 
-  useEffect(() => {
-    // Configuración de ScrollReveal solo si hay eventos
-    if (events.length > 0) {
-      const sr = ScrollReveal();
-      sr.reveal(".event-card", {
-        duration: 1000,
-        opacity: 0,
-        distance: "20px",
-        origin: "bottom",
-        delay: 300,
-        interval: 200,
-      });
-    }
-  }, [events]);
+  // useEffect(() => {
+  //   // Configuración de ScrollReveal solo si hay eventos
+  //   if (events.length > 0) {
+  //     const sr = ScrollReveal();
+  //     sr.reveal(".event-card", {
+  //       duration: 1000,
+  //       opacity: 0,
+  //       distance: "20px",
+  //       origin: "bottom",
+  //       delay: 300,
+  //       interval: 200,
+  //     });
+  //   }
+  // }, [events]);
 
   const isEventInProgress = (date: string, time: string, duration: number) => {
     const currentDate = new Date();

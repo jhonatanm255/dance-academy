@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../lib/firebase';
 import { useNavigate } from "react-router-dom";
+import logo from "../../assets/logo2.png";
 
 export default function AdminLogin() {
   const [email, setEmail] = useState('');
@@ -25,6 +26,7 @@ export default function AdminLogin() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
       <div className="max-w-md w-full space-y-8 p-8 bg-white rounded-lg shadow-lg">
+        <img className='m-auto' src={logo} alt="" />
         <div>
           <h2 className="text-center text-3xl font-bold text-gray-900">
             Panel Administrativo

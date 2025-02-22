@@ -31,7 +31,7 @@ export default function Intro() {
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-3xl font-bold text-white mt-4">
-            Karina Dance Academy
+            Dance Academy
           </h1>
         </div>
       </div>

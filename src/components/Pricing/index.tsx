@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "../../lib/firebase"; // Ajusta la importación de db según tu configuración
+import { db } from "../../lib/firebase";
 import ScrollReveal from "scrollreveal";
 import PriceCard from "./PriceCard";
 

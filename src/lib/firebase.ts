@@ -6,13 +6,13 @@ import { getStorage } from "firebase/storage";
 // console.log(import.meta.env.VITE_FIREBASE_API_KEY); // Aquí verificamos que la clave de API se carga correctamente
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB3ZqIMqqdi79lPPj9XvZ9FlDYtYSubNb8",
-  authDomain: "karina-dance.firebaseapp.com",
-  projectId: "karina-dance",
-  storageBucket: "karina-dance.firebasestorage.app",
-  messagingSenderId: "1083525740825",
-  appId: "1:1083525740825:web:f6c9f9ba6be7851ee02d88",
-  measurementId: "G-SGJV6RKZFJ",
+  apiKey: "AIzaSyBEBWRUtpja_DHTXz86sllWQmKxTHRjE5E",
+  authDomain: "dance-academy-6504e.firebaseapp.com",
+  projectId: "dance-academy-6504e",
+  storageBucket: "dance-academy-6504e.firebasestorage.app",
+  messagingSenderId: "245660781994",
+  appId: "1:245660781994:web:a692bcc01129091d48afd3",
+  measurementId: "G-NFNE0K2TW7",
 };
 
 // const firebaseConfig = {

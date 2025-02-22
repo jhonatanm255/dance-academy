@@ -6,13 +6,11 @@ export function useAuth() {
   const [user, setUser] = useState<User | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  // Efecto para sincronizar el estado del usuario con Firebase
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((currentUser) => {
       setUser(currentUser);
     });
 
-    // Limpiar el efecto cuando el componente se desmonta
     return () => unsubscribe();
   }, []);
 

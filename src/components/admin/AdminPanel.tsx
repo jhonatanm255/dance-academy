@@ -30,7 +30,7 @@ export default function AdminPanel() {
             </h1>
             <button
               onClick={handleSignOut}
-              className="text-sm text-gray-600 hover:text-pink-500"
+              className="text-sm text-red-600 hover:bg-red-50 py-2 px-4 rounded-lg"
             >
               Cerrar Sesión
             </button>
