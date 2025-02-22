@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 import { ArrowRight } from "lucide-react";
 import img2 from "../assets/img-2.jpg";
 import Modal from "../components/Modal"; // Importa el componente Modal
@@ -7,6 +8,42 @@ const Hero: React.FC = () => {
   const [isModalOneOpen, setIsModalOneOpen] = useState<boolean>(false);
 
   const toggleModalOne = () => setIsModalOneOpen(!isModalOneOpen);
+
+   useEffect(() => {
+     const sr = ScrollReveal();
+
+     sr.reveal("#hero-image", {
+       delay: 4800,
+       duration: 2000,
+       distance: "50px",
+       origin: "bottom",
+       opacity: 0,
+     });
+
+     sr.reveal("#hero-title", {
+       delay: 5200,
+       duration: 2000,
+       distance: "50px",
+       origin: "bottom",
+       opacity: 0,
+     });
+
+     sr.reveal("#hero-text", {
+       delay: 5500,
+       duration: 2000,
+       distance: "50px",
+       origin: "bottom",
+       opacity: 0,
+     });
+
+     sr.reveal("#hero-buttons", {
+       delay: 5600,
+       duration: 2000,
+       distance: "50px",
+       origin: "bottom",
+       opacity: 0,
+     });
+   }, []);
 
   return (
     <section id="home" className="relative min-h-screen flex items-center">
